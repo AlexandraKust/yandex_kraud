@@ -1,0 +1,186 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	max-width: 1366px;
+	padding: 25px 72px;
+	margin: 0 auto;
+
+	&__logo {
+		display: block;
+		width: 245px;
+
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
+
+
+
+.hero {
+	position: relative;
+	padding: 124px 0 129px;
+	overflow: hidden;
+	background: #E9DED4;
+
+	&__city {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		pointer-events: none;
+
+		img {
+			width: 1632px;
+			position: absolute;
+			right: -171px;
+			bottom: -128px;
+		}
+	}
+
+	&__row {
+		display: flex;
+		align-items: stretch;
+		justify-content: space-between;
+		gap: 60px;
+	}
+
+	&__decor {
+		position: relative;
+		flex: 0 0 662px;
+		width: 662px;
+		pointer-events: none;
+	}
+
+	&__sun {
+		position: absolute;
+		z-index: 1;
+		top: -169px;
+		left: 0;
+		display: block;
+		width: 100%;
+		overflow: visible;
+		aspect-ratio: 1/1;
+		font-family: 'Merriweather', serif;
+		font-size: 18px;
+		fill: #000;
+		text-transform: uppercase;
+		transform: rotate(-35deg);
+
+		path {
+			fill: none;
+		}
+
+		#circleText {
+			mix-blend-mode: overlay;
+		}
+	}
+
+	&__content {
+		position: relative;
+		z-index: 10;
+		max-width: 542px;
+		flex: 0 0 542px;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+		font-family: 'Merriweather', serif;
+		font-weight: normal;
+		font-size: 60px;
+		line-height: 1.1;
+		color: #313131;
+		text-transform: uppercase;
+
+		span {
+			display: inline-block;
+			width: 100%;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		.right {
+			text-align: right;
+		}
+	}
+
+	&__text {
+		margin-bottom: 40px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.3;
+		color: #313131;
+		text-align: center;
+	}
+
+	&__btns {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 16px;
+	}
+
+	&__btn {
+		flex: 0 0 48%;
+	}
+
+	&__imgs {}
+}
+
+
+.hero-img {
+
+	&>*>img {
+		width: 100%;
+		object-fit: contain;
+	}
+
+	&__king {
+		position: absolute;
+		bottom: 46px;
+		left: 58px;
+		z-index: 1;
+		width: 126px;
+		transform: translateY(120%);
+		animation: jump 0.5s ease-in-out 1.3s forwards;
+	}
+
+	&__queen {
+		position: absolute;
+		z-index: 1;
+		right: 132px;
+		bottom: 149px;
+		width: 141px;
+		transform: translateY(120%);
+		animation: jump 0.5s ease-in-out 1s forwards;
+	}
+
+	&__knight {
+		position: absolute;
+		z-index: 5;
+		bottom: -142px;
+		left: 164px;
+		width: 194px;
+		transform: translateY(120%);
+		animation: jump 0.5s ease-in-out 1.6s forwards;
+	}
+
+	&__pawn {
+		position: absolute;
+		z-index: 5;
+		bottom: -110px;
+		right: 14px;
+		width: 82px;
+		transform: translateY(120%);
+		animation: jump 0.7s ease-in-out 1.9s forwards;
+	}
+}

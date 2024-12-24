@@ -1,0 +1,98 @@
+.participants {
+	padding: 100px 0 142px;
+
+	&__row {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 20px;
+		margin-bottom: 60px;
+	}
+
+	&__title {
+
+		font-size: 54px;
+		line-height: 1.2;
+	}
+
+	&__arrows {
+		position: relative;
+		bottom: 10px;
+		display: flex;
+		align-items: center;
+		gap: 14px;
+	}
+
+	&__pagination {
+		font-size: 16px;
+		line-height: 1.2;
+		color: rgba($color: #313131, $alpha: 0.6);
+
+		.swiper-pagination-current {
+			color: #313131;
+		}
+	}
+
+	&__swiper {
+		padding: 0 18px;
+	}
+
+	&__slide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 35px;
+		text-align: center;
+	}
+
+	&__photo {
+		flex: 0 0 320px;
+		aspect-ratio: 1 / 1;
+		margin-bottom: 29px;
+		border-radius: 50%;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
+
+	&__name {
+		margin-bottom: 5px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 1.2;
+		color: #313131;
+	}
+
+	&__rang {
+		margin-bottom: 20px;
+		font-size: 20px;
+		line-height: 1.2;
+		color: #313131;
+		opacity: 0.6;
+	}
+
+	&__link {
+		display: inline-block;
+		width: fit-content;
+		padding: 7px 12px;
+		border-radius: 62px;
+		border: 1px solid currentColor;
+		background-color: transparent;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.2;
+		color: #3057A2;
+		transition: 0.3s ease-in-out;
+		transition-property: color, background-color;
+
+		&:hover {
+			color: #fff;
+			background-color: #3057A2;
+		}
+	}
+}

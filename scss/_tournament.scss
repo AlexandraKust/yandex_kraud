@@ -1,0 +1,111 @@
+.tournament {
+	padding: 80px 0 100px;
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 64px;
+		margin-bottom: 64px;
+	}
+
+	&__title {
+		max-width: 764px;
+	}
+
+	&__img {
+		max-width: 394px;
+
+		img {
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+
+	&__main {
+		display: flex;
+		gap: 44px;
+	}
+
+	&__main &__title {
+		margin-bottom: 62px;
+	}
+
+	&__grandmaster {
+		position: relative;
+		flex: 0 0 474px;
+
+		img {
+			position: absolute;
+			top: -26px;
+			left: -27px;
+			width: calc(100% + 27px* 2);
+			height: calc(100% + 39px);
+		}
+	}
+
+	&__texture {
+		top: -47px;
+		left: -27px;
+		width: calc(100% + 27px* 2);
+		height: calc(100% + 39px);
+	}
+
+	&__content {
+		flex: 1 1 auto;
+	}
+
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-bottom: 48px;
+
+		td {
+			padding: 16px 16px 14px 0;
+			border: 2px solid #D0D0D0;
+			font-size: 20px;
+			line-height: 1.2;
+			color: #313131;
+		}
+
+		tr {
+			& td:first-child {
+				border-left: none;
+				width: fit-content;
+			}
+
+			& td:last-child {
+				border-right: none;
+				padding-left: 16px;
+			}
+
+			&:first-child td {
+				padding-top: 0;
+				border-top: none;
+			}
+
+			&:last-child td {
+				padding-bottom: 0;
+				border-bottom: none;
+			}
+		}
+	}
+
+	&__label {
+		opacity: 0.7;
+	}
+
+	&__text {
+		font-weight: 600;
+
+		.old-price {
+			margin-right: 12px;
+		}
+	}
+
+	&__ad {
+		font-size: 20px;
+		line-height: 1.2;
+		color: #3057A2;
+	}
+}
